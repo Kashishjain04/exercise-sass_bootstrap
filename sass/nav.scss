@@ -1,0 +1,21 @@
+@use "globals";
+
+
+nav {
+	.inner {
+		width: 95%;
+		max-width: 1200px;
+
+		img[alt="logo"] {
+			width: 2rem;
+		}
+
+    button {
+      font-size: 14px;
+    }
+
+    .signup {
+      background-color: globals.$theme-color;
+    }
+	}
+}
