@@ -6,5 +6,9 @@ body * {
   margin: 0;
   padding: 0;
 }
+body .nav_frame {
+  width: 100vw;
+  height: 64.8px;
+}
 
 /*# sourceMappingURL=globals.css.map */

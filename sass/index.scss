@@ -1,11 +1,6 @@
 @use "globals";
 
 body {
-	.nav_frame {
-		width: 100vw;
-		height: globals.$nav-height;
-	}
-
 	height: 100vh;
 	background: url("https://img.freepik.com/fotos-premium/conceito-de-reserva-de-viagens-on-line-modelo-de-aviao-e-passaporte-em-fundo-amarelo-e-laranja-pista-abstrata_121946-1195.jpg?w=2000");
 	background-size: cover;

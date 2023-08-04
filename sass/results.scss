@@ -1,0 +1,88 @@
+@use "globals";
+
+body {
+	min-height: 100vh;
+	background-color: #c4c4c4;
+
+	.search_container {
+		background-color: #f5f7ff;
+		.search_parameters {
+			max-width: 800px;
+			font-size: 14px;
+
+			.location {
+				width: fit-content;
+			}
+
+			img {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+
+			a {
+				border: 1px solid #02a1e1;
+				color: #02a1e1;
+			}
+		}
+	}
+
+	.divider {
+		width: 1px;
+		background-color: #dee2e6;
+	}
+
+  .card {
+    width: fit-content;
+
+    .card-body {
+      .fare-details {
+        p {
+          font-size: 12px;
+        }
+      }
+      a {
+        background-color: globals.$theme-color;
+      }
+    }
+  }
+
+	.result_item {
+		.airline_logo {
+			width: 1rem;
+			@include globals.responsive(276px) {
+				width: 2rem;
+        border-radius: 5px;
+			}
+			@include globals.responsive(420px) {
+				width: 3rem;
+			}
+		}
+		.details {
+      border: none;
+			border-left: 1px solid #dee2e6;
+			img {
+				padding: 2px;
+				width: 1.25rem;
+				@include globals.responsive(276px) {
+					width: 1.5rem;
+					padding: 3px;
+				}
+			}
+			
+		}
+	}
+
+  h3 {
+    font-size: 16px;
+    @include globals.responsive(340px) {
+      font-size: 26px;
+    }
+  }
+  p, a {
+    font-size: 10px;
+    @include globals.responsive(340px) {
+      font-size: 12px;
+    }
+    color: #65748e;
+  }
+}

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: Roboto;
+}
+body * {
+  margin: 0;
+  padding: 0;
+}
+body .nav_frame {
+  width: 100vw;
+  height: 64.8px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #c4c4c4;
+}
+body .search_container {
+  background-color: #f5f7ff;
+}
+body .search_container .search_parameters {
+  max-width: 800px;
+  font-size: 14px;
+}
+body .search_container .search_parameters .location {
+  width: fit-content;
+}
+body .search_container .search_parameters img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+body .search_container .search_parameters a {
+  border: 1px solid #02a1e1;
+  color: #02a1e1;
+}
+body .divider {
+  width: 1px;
+  background-color: #dee2e6;
+}
+body .card {
+  width: fit-content;
+}
+body .card .card-body .fare-details p {
+  font-size: 12px;
+}
+body .card .card-body a {
+  background-color: #ff630a;
+}
+body .result_item .airline_logo {
+  width: 1rem;
+}
+@media screen and (min-width: 276px) {
+  body .result_item .airline_logo {
+    width: 2rem;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 420px) {
+  body .result_item .airline_logo {
+    width: 3rem;
+  }
+}
+body .result_item .details {
+  border: none;
+  border-left: 1px solid #dee2e6;
+}
+body .result_item .details img {
+  padding: 2px;
+  width: 1.25rem;
+}
+@media screen and (min-width: 276px) {
+  body .result_item .details img {
+    width: 1.5rem;
+    padding: 3px;
+  }
+}
+body h3 {
+  font-size: 16px;
+}
+@media screen and (min-width: 340px) {
+  body h3 {
+    font-size: 26px;
+  }
+}
+body p, body a {
+  font-size: 10px;
+  color: #65748e;
+}
+@media screen and (min-width: 340px) {
+  body p, body a {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=results.css.map */

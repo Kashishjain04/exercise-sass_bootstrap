@@ -6,16 +6,16 @@ body * {
   margin: 0;
   padding: 0;
 }
+body .nav_frame {
+  width: 100vw;
+  height: 64.8px;
+}
 
 body {
   height: 100vh;
   background: url("https://img.freepik.com/fotos-premium/conceito-de-reserva-de-viagens-on-line-modelo-de-aviao-e-passaporte-em-fundo-amarelo-e-laranja-pista-abstrata_121946-1195.jpg?w=2000");
   background-size: cover;
   background-position: left;
-}
-body .nav_frame {
-  width: 100vw;
-  height: 64.8px;
 }
 body main {
   height: calc(95vh - 64.8px);

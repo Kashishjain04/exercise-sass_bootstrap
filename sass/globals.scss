@@ -3,10 +3,21 @@
 $theme-color: #ff630a;
 $nav-height: 64.8px;
 
+@mixin responsive($breakpoint) {
+	@media screen and (min-width: $breakpoint) {
+		@content;
+	}
+}
+
 body {
 	* {
 		margin: 0;
 		padding: 0;
 	}
 	font-family: Roboto;
+	
+	.nav_frame {
+		width: 100vw;
+		height: $nav-height;
+	}
 }

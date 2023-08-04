@@ -16,12 +16,14 @@
 	<body class="">
 		<iframe class="nav_frame" width="100%" height="100%" src="navbar.html" frameborder="0"></iframe>
 		<main class="d-flex flex-column">
-      <div class="flex-grow-1"></div>
+			<div class="flex-grow-1"></div>
 			<div class="mt-auto search_container p-3 rounded-4 shadow-lg mx-auto bg-white">
 				<p class="text-center fs-5 mb-2">Search Flight</p>
-				<div class="d-flex justify-content-center gap-2">
-					<div class="d-flex border rounded-3 location">
-						<div class="d-flex align-items-center gap-3 p-2">
+				<!-- form container -->
+				<form action="/results.html" class="d-flex flex-column flex-lg-row flex-wrap justify-content-center gap-2">
+					<!-- div for departure and arrival cities -->
+					<div class="d-flex flex-column flex-sm-row flex-grow-1 border rounded-3 location">
+						<div class="d-flex flex-grow-1 align-items-center gap-3 p-2">
 							<img
 								class="p-1 rounded-circle shadow-lg"
 								src="assets/take-off.svg"
@@ -30,62 +32,78 @@
 							<div class="">
 								<label for="departure" class="d-block">Departure city</label>
 								<input
-									class="border-0"
+									class="border-0 w-auto"
 									type="text"
 									name="departure"
 									id=""
 									value="DEL - New Delhi"
+									required
 								/>
 							</div>
 						</div>
-						<div class="h-100 divider"></div>
-						<div class="d-flex align-items-center gap-3 p-2">
+						<!-- separate dividers for mobile and desktop -->
+						<hr class="d-sm-none ">
+						<div class="flex-shrink-0 divider"></div>
+						<div class="d-flex flex-grow-1 align-items-center gap-3 p-2">
 							<img class="p-1 rounded-circle shadow-lg" src="assets/land.svg" alt="arrival" />
 							<div class="">
 								<label for="arrival" class="d-block">Arrival city</label>
 								<input
-									class="border-0"
+									class="border-0 w-auto"
 									type="text"
 									name="arrival"
 									id=""
 									value="BLR - Bengaluru"
+									required
 								/>
 							</div>
 						</div>
 					</div>
-					<div class="d-flex border rounded-3 align-items-center gap-3 p-2">
-						<img
-							class="p-1 border rounded-circle shadow-lg"
-							src="assets/calendar.svg"
-							alt="calendar"
-						/>
-						<div class="">
-							<label for="departure" class="d-block">Departure date</label>
-							<input
-								class="border-0"
-								type="date"
-								name="departure"
-								id=""
-								value="DEL - New Delhi"
+					<!-- div for departure date and number of adults -->
+					<div class="d-flex flex-column flex-sm-row flex-grow-1 gap-2">
+						<div class="d-flex flex-grow-1 border rounded-3 align-items-center gap-3 p-2">
+							<img
+								class="p-1 border rounded-circle shadow-lg"
+								src="assets/calendar.svg"
+								alt="calendar"
 							/>
+							<div class="">
+								<label for="departure-date" class="d-block">Departure date</label>
+								<input
+									class="border-0 w-auto"
+									type="date"
+									name="departure-date"
+									id=""
+									required
+								/>
+							</div>
+						</div>
+						<div class="d-flex flex-grow-1 border rounded-3 align-items-center gap-3 p-2">
+							<img
+								class="p-1 border rounded-circle shadow-lg"
+								src="assets/user.svg"
+								alt="passenger"
+							/>
+							<div class="">
+								<label for="passenger" class="d-block">Passenger</label>
+								<input
+									class="border-0"
+									type="number"
+									name="passenger"
+									id=""
+									value="1"
+									min="1"
+									required
+								/>
+							</div>
 						</div>
 					</div>
-					<div class="d-flex border rounded-3 align-items-center gap-3 p-2">
-						<img
-							class="p-1 border rounded-circle shadow-lg"
-							src="assets/user.svg"
-							alt="passenger"
-						/>
-						<div class="">
-							<label for="passenger" class="d-block">Passenger</label>
-							<input class="border-0" type="number" name="passenger" id="" value="1" min="1" />
-						</div>
-					</div>
-					<button class="p-2 search_btn border-0 rounded-3 shadow-lg">
+					<!-- submit button -->
+					<button type="submit" class="flex-grow-1 p-2 search_btn border-0 rounded-3 shadow-lg">
 						<img src="assets/search.svg" alt="saerch" />
 						<p class="text-white">Search</p>
 					</button>
-				</div>
+				</form>
 			</div>
 		</main>
 		<script
