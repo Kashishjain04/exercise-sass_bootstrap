@@ -34,6 +34,29 @@ body {
   .card {
     width: fit-content;
 
+		.card-header {
+			.chevron {
+				position: absolute;
+				bottom: -1rem;
+				left: 50%;
+				transform: rotate(180deg) translateX(-50%);
+				transition: all 0.5s;
+				img {
+					width: 1rem;
+					height: 1rem;
+				}
+			}
+			button[aria-expanded="false"].chevron{
+				transform: translateX(50%);
+			}
+			.fare_details {
+				border-left: 1px dashed #dee2e6;
+			}
+			a {
+        background-color: globals.$theme-color;
+      }
+		}
+
     .card-body {
       .fare-details {
         p {
