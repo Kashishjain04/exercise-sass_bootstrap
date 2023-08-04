@@ -21,6 +21,10 @@ nav .inner img[alt=logo] {
 nav .inner button {
   font-size: 14px;
 }
+nav .inner .login {
+  color: #ff630a;
+  border: 1px solid #ff630a;
+}
 nav .inner .signup {
   background-color: #ff630a;
 }

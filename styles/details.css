@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: Roboto;
+}
+body * {
+  margin: 0;
+  padding: 0;
+}
+body .nav_frame {
+  width: 100vw;
+  height: 64.8px;
+}
+
+body {
+  min-height: 100vh;
+}
+body main {
+  width: 95%;
+  max-width: 1000px;
+}
+body main .details .airline img {
+  width: 1rem;
+}
+@media screen and (min-width: 276px) {
+  body main .details .airline img {
+    width: 2rem;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 420px) {
+  body main .details .airline img {
+    width: 3rem;
+  }
+}
+body main .details .airline p {
+  font-size: 12px;
+}
+body main .details .dashed-divider {
+  width: 1px;
+  border: 1px dashed #dee2e6;
+}
+body main .details .dashed-divider .dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #dee2e6;
+}
+body main .details .dashed-divider .dot-1 {
+  transform: translate(-50%, -50%);
+}
+body main .details .dashed-divider .dot-2 {
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+body main .details .timings p {
+  font-size: 14px;
+}
+body main .left {
+  flex: 0.7;
+}
+body main .right {
+  flex: 0.3;
+}
+body main .right .passenger-count {
+  font-size: 14px;
+}
+body main .right .fare-breakup p {
+  font-size: 14px;
+}
+body main .right button {
+  background-color: #ff630a;
+}
+
+/*# sourceMappingURL=details.css.map */
